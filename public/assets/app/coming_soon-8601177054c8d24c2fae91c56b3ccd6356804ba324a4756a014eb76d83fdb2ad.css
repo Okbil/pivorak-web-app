@@ -1,0 +1,8 @@
+/* line 1, /Users/svr/Documents/Projects/rails/pivorak-web-app/app/assets/stylesheets/app/coming_soon.scss */
+body#coming-soon {
+  background: url(/assets/coming_soon-726013b124b3117e6e5821644c6c88c9ecb57fb35eda0128ea0e96d7fcd0cc6a.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
