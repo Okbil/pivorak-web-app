@@ -9,3 +9,4 @@ html
 
   body#coming-soon
     = render 'layouts/ga/body' if Rails.env.production?
+    = yield
