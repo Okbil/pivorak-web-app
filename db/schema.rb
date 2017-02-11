@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170120065141) do
+ActiveRecord::Schema.define(version: 20170211062831) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20170120065141) do
     t.integer  "venue_id"
     t.integer  "limit_total",    default: 0,     null: false
     t.integer  "limit_verified", default: 0,     null: false
+    t.string   "gallery_url"
     t.index ["slug"], name: "index_events_on_slug", using: :btree
   end
 

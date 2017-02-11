@@ -63,5 +63,15 @@ RSpec.describe 'Events CREATE' do
 
       expect(Event.last.venue_id).to be_present
     end
+
+    it 'creates event with gallery_url' do
+      visit '/admin/events/new'
+      fill_in 'Title',  with: 'Super New Event'
+      fill_in 'Gallery url',  with: 'http://facebook.com'
+
+      click_button 'Create Event'
+
+      expect(Event.last.gallery_url).to be_present
+    end
   end
 end
